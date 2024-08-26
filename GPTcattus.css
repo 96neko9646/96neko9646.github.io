@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'blocky';
+    src: url('fonts/blocky/blocky.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+body {
+    padding-top: 100px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000; /* 他の要素より上に表示されるように */
+    background-color: #fff; /* 背景色はお好みで */
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 0px;
+}
+
+header img {
+    width: 100px; /* Adjust based on the image size */
+}
+
+.header-h1 {
+    position: relative;
+    font-size: 70px;
+    height: auto;
+    font-family: 'blocky', sans-serif;
+}
+
+.header-btn-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+.header-btn-wrapper li {
+    font-size: 30px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    color:darkblue;
+    font-family: 'blocky', sans-serif;
+}
+
+.header-btn {
+    list-style: none;
+    margin: 0;
+    padding: 50px;
+    height:100px;
+    width:40px;
+    border: 2px solid black;
+}
+.cattus {
+    background-color: aliceblue;
+}
+.cattus:hover {
+    background-color: #b8cce4;
+}
+.news {
+    background-color: azure;
+}
+.news:hover {
+    background-color: #b3d9d9;
+}
+.about {
+    background-color: lightblue;
+}
+.about:hover {
+    background-color: #6ca6cd;
+}
+.gallery {
+    background-color: rgb(8, 209, 227);
+    margin-right: 20px;
+}
+.gallery:hover {
+    background-color: rgb(5, 154, 167);
+}
+
+.top-wrapper {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: 'blocky', sans-serif;
+}
+
+.top-wrapper img {
+    width: 100%;
+    padding: 0px;
+}
+.top-wrapper h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .header-background {
+        height: 300px; /* モバイルデバイスでの高さ調整 */
+    }
+    .welcome-text h1 {
+        font-size: 60px; /* モバイルデバイスでのフォントサイズ調整 */
+    }
+    .header-h1 {
+        font-size: 35px; /* モバイルデバイスでのフォントサイズ調整 */
+    }
+    /* その他のレスポンシブデザイン対応 */
+}
+
+
+.guide-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: 'blocky', sans-serif;
+}
+
+.guide-item img {
+    width: 100%; /* Adjust based on the image size */
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color:lightgray;
+    font-family: 'blocky', sans-serif;
+}
+footer p {
+    font-size: 40px;
+}
+
+footer img {
+    width: 100px; /* Adjust based on the image size */
+}
